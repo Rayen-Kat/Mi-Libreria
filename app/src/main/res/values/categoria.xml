@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categoria_array">
+        <item>Acción</item>
+        <item>Aventura</item>
+        <item>Ciencia Ficción</item>
+        <item>Fantasía</item>
+        <item>Misterio</item>
+        <item>Humor</item>
+        <item>Horror</item>
+        <item>Poesia</item>
+        <item>Romance</item>
+    </string-array>
+</resources>
