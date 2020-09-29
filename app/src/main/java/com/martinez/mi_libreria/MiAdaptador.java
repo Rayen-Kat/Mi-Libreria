@@ -26,7 +26,7 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolderDato
 
     @Override
     public void onBindViewHolder(@NonNull MiAdaptador.ViewHolderDatos holder, int position) {
-        holder.asignatorDatos(lista_datos.get(position));
+
     }
 
     @Override
@@ -39,7 +39,6 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolderDato
             super(itemView);
         }
 
-        public void asignatorDatos(String s) {
-        }
+
     }
 }
