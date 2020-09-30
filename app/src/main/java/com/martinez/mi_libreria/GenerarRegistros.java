@@ -117,9 +117,16 @@ public class GenerarRegistros extends AppCompatActivity {
                 String Categoria = sCat.getSelectedItem().toString();
                 String Calificacion = Float.toString(ratingBar.getRating());
                 String Leido = Boolean.toString(cbLeido.isChecked());
+                if (Leido.equals("true")){
+                    String leidoo = "Se Ha Leido";
+                    Libros libro = new Libros(Titulo, Autor, Categoria, leidoo, Calificacion);
+                    listalibros.add(libro);
+                }else if(Leido.equals("false")){
+                    String leidoo = " No Se Ha Leido";
+                    Libros libro = new Libros(Titulo, Autor, Categoria, leidoo, Calificacion);
+                    listalibros.add(libro);
+                }
 
-                Libros libro = new Libros(Titulo, Autor, Categoria, Leido, Calificacion);
-                listalibros.add(libro);
 
             }
 
