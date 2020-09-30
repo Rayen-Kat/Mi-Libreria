@@ -4,27 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
     tools:context=".GenerarRegistros">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="120dp"
-        android:text="Categoria"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:fontFamily="casual"
         android:text="Nuevo Registro"
-        android:textColor="@android:color/background_dark"
+        android:textColor="#4C2935"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -40,27 +30,30 @@
         android:ems="10"
         android:hint="Ingrese el Titulo"
         android:inputType="textPersonName"
-        android:textColorHint="@color/colorPrimaryDark"
+        android:textColorHint="#512DA1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Spinner
         android:id="@+id/sCat"
-        android:layout_width="214dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="267dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="108dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
     <CheckBox
         android:id="@+id/cbLeido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="serif-monospace"
         android:text="¿Leido?"
         android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sCat" />
 
@@ -68,12 +61,13 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed"
         android:text="Calificar"
         android:textColor="@android:color/background_dark"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sCat" />
 
@@ -89,13 +83,16 @@
 
     <Button
         android:id="@+id/btnCrear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_width="128dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="64dp"
+        android:background="#164761"
         android:text="Guardar"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHighlight="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
@@ -107,7 +104,7 @@
         android:ems="10"
         android:hint="Ingrese el Autor"
         android:inputType="textPersonName"
-        android:textColorHint="@color/colorPrimaryDark"
+        android:textColorHint="#512DA1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintStart_toStartOf="parent"
