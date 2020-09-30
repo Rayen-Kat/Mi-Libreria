@@ -30,9 +30,10 @@ public class MainActivity extends AppCompatActivity {
         btn_VerR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intento2 = new Intent(MainActivity.this, verRegistros.class);
+                Intent intento2 = new Intent(MainActivity.this, VerRegistros.class);
                 startActivity(intento2);
             }
         });
+
     }
 }

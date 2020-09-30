@@ -53,71 +53,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
-    <RadioGroup
-        android:id="@+id/rgGrupo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="33dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="¿Leido?"
-            android:textColor="@android:color/background_dark"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/rbSi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SI"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/rbNo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="NO"
-            android:textSize="20sp" />
-    </RadioGroup>
-
     <CheckBox
-        android:id="@+id/cbSaga"
+        android:id="@+id/cbLeido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="68dp"
-        android:text="¿Saga?"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:text="¿Leido?"
         android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/rgGrupo"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sCat" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="54dp"
         android:text="Calificar"
         android:textColor="@android:color/background_dark"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.73"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rgGrupo" />
+        app:layout_constraintTop_toBottomOf="@+id/sCat" />
 
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.859"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbSaga" />
+        app:layout_constraintTop_toBottomOf="@+id/cbLeido" />
 
     <Button
         android:id="@+id/btnCrear"
